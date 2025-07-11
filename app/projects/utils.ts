@@ -42,7 +42,7 @@ export function getProjects() {
         title: "TAO SentimentBot (Bittensor Endgame Hackathon)",
         description: "A Telegram bot that delivers AI-generated sentiment reports for TAO users on Subnet 42.",
         count: 4,
-        githubLink: "https://github.com/D3TRU04/tao-sentimentbot"
+        githubLink: "https://github.com/luquibotbol/tao-sentimentbot"
       }
     },
     {
