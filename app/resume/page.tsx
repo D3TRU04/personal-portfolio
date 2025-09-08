@@ -34,13 +34,13 @@ const ResumePage = () => {
                     <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
                   </svg>
                   <div>
-                    <p className="font-medium">Dan's Resume 2027 (1).pdf</p>
+                    <p className="font-medium">Dan_Truong_Resume_2027.pdf</p>
                     <p className="text-sm text-secondary">PDF Document • 117 KB</p>
                   </div>
                 </div>
                 {/* Download button for the resume */}
                 <a 
-                  href="/resume/Dan's Resume 2027 (1).pdf" 
+                  href="/resume/Dan_Truong_Resume_2027.pdf" 
                   download
                   className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition-colors text-sm"
                 >
@@ -51,7 +51,7 @@ const ResumePage = () => {
               {/* Embedded PDF viewer */}
               <div className="border border-gray-200 rounded-lg overflow-hidden dark:border-gray-600">
                 <iframe
-                  src="/resume/Dan's Resume 2027 (1).pdf"
+                  src="/resume/Dan_Truong_Resume_2027.pdf"
                   className="w-full h-[800px]"
                   title="Dan Truong Resume"
                 />

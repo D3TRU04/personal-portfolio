@@ -8,22 +8,28 @@ type ExperienceData = {
 export function getExperience(): ExperienceData[] {
   return [
     {
-      role: 'Engineering',
-      company: 'narb',
-      date: 'Summer 2025',
-      logo: '/images/narb-logo.png',
+      role: 'Cybersecurity',
+      company: 'UT Austin Information Security Office',
+      date: 'Fall 2025',
+      logo: '/images/utiso-logo.png',
     },
     {
       role: 'Engineering',
       company: 'Studio23Labs',
-      date: 'Summer 2025',
+      date: '2025',
       logo: '/images/studio23labs-logo.png',
     },
     {
+      role: 'XRPL Builder Residency Fellow',
+      company: 'Ripple',
+      date: 'Summer 2025',
+      logo: '/images/ripple-logo.png',
+    },
+    {
       role: 'Engineering',
-      company: 'Caelus',
-      date: 'Spring 2025',
-      logo: '/images/caelus-logo.png',
+      company: 'narb',
+      date: 'Summer 2025',
+      logo: '/images/narb-logo.png',
     },
     {
       role: 'Engineering',
