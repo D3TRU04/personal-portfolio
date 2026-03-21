@@ -14,3 +14,7 @@ yarn-error.log
 
 # mac
 .DS_Store
+
+# ai
+.claude
+.qodo
