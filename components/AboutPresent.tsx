@@ -30,7 +30,7 @@ export function AboutPresent() {
     <div className="flex flex-col items-start mb-4 sm:mb-4">
       <div className="flex flex-row items-center justify-between w-full">
         <div className="flex items-center h-[40px]">
-          <div className="text-4xl font-thin patriot-bold">d3tru04</div>
+          <div className="text-4xl font-light commit-mono">d3tru04</div>
         </div>
         <div className="flex flex-col items-end gap-0">
           <div className="h-[20px]">
