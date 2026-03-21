@@ -18,3 +18,5 @@ yarn-error.log
 # ai
 .claude
 .qodo
+.vercel
+.env*.local
