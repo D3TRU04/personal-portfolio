@@ -31,8 +31,6 @@
     "lucide-react": "^0.372.0",
     "markdown-to-jsx": "^7.2.1",
     "next": "^15.5.14",
-    "nextra": "^2.13.4",
-    "nextra-theme-blog": "^2.13.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "rehype-autolink-headings": "^6.1.1",
