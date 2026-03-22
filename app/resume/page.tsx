@@ -40,7 +40,7 @@ const ResumePage = () => {
                 </div>
                 {/* Download button for the resume */}
                 <a 
-                  href="/resume/Dan_Truong_Resume_2027.pdf" 
+                  href="/resume/DanTruongResume2027.pdf" 
                   download
                   className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition-colors text-sm"
                 >
@@ -51,7 +51,7 @@ const ResumePage = () => {
               {/* Embedded PDF viewer */}
               <div className="border border-gray-200 rounded-lg overflow-hidden dark:border-gray-600">
                 <iframe
-                  src="/resume/Dan_Truong_Resume_2027.pdf"
+                  src="/resume/DanTruongResume2027.pdf"
                   className="w-full h-[800px]"
                   title="Dan Truong Resume"
                 />
