@@ -63,7 +63,7 @@ export const PROJECTS: Project[] = [
     title: 'Kleo (XRPL Student Builder Residency)',
     description: 'A Decentralized World Map for Real-Time Stories.',
     githubLink: 'https://github.com/D3TRU04/kleo',
-    websiteLink: 'kleo-lake.vercel.app',
+    websiteLink: 'https://kleo-lake.vercel.app',
     articleLink:
       'https://dev.to/ripplexdev/student-builders-push-xrpl-innovation-forward-at-residency-20-441p',
     preview: {
