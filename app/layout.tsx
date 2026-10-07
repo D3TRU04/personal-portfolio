@@ -1,18 +1,14 @@
 // Imports global styles, must be at the top
-import '../styles/globals.css';
+import '@/styles/globals.css';
 
-// Component imports for consistent page structure
-import { Header } from '../components/Header';
-import { Footer } from '../components/Footer';
-
-// Font and analytics imports
+import type { ReactNode } from 'react';
+import type { Metadata } from 'next';
 import { Roboto_Mono } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
-import Script from 'next/script';
-import localFont from 'next/font/local';
 
-// Type import for metadata
-import type { Metadata } from 'next';
+import { Header } from '@/components/layout/Header';
+import { Footer } from '@/components/layout/Footer';
+import { SITE_NAME } from '@/data/site';
 
 // Metadata for SEO purposes. This is the information that will be used by search engines.
 export const metadata: Metadata = {
@@ -30,13 +26,9 @@ export const metadata: Metadata = {
     'developer',
     'software engineer',
   ],
-  creator: 'Dan Truong',
+  creator: SITE_NAME,
 };
 
-// Styles for LaTeX rendering
-import 'katex/dist/katex.min.css';
-
-// Font configuration for Roboto Mono
 const roboto = Roboto_Mono({
   display: 'swap',
   subsets: ['latin'],
@@ -44,22 +36,17 @@ const roboto = Roboto_Mono({
 });
 
 // Root layout component that wraps every page
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"
       className={`${roboto.className} flex flex-col min-h-screen`}
     >
-      <head>
-        {/* Favicon for the site */}
-        <link rel="icon" type="image/x-icon" href="/images/AP.png" />
-      </head>
       {/* Body with flex column to push footer to the bottom */}
       <body className="flex flex-col min-h-screen text-foreground">
         <Header />
-        {/* Main content area where page components are rendered */}
         <main className="flex-grow px-6">{children}</main>
-        {/* Vercel Analytics component for tracking page views */}
+        <Footer />
         <Analytics />
       </body>
     </html>
