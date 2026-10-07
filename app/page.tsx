@@ -17,9 +17,11 @@ export default function Home() {
         <div className="text-left">
           <h2 className="mb-2 text-xl font-bold">About Me</h2>
           <p className="mb-8 text-secondary">
-            Hello, my name is Dan Truong, and I'm currently a junior at the University of Texas at Austin studying Mathematics
-            and Computer Science. Beyond academics, my interests range from cameras, playing pool, and playing golf. I'm also deeply passionate
-            about startups, web3, and artificial intelligence.
+          Hello, my name is Dan Truong, and I'm a senior at the University of Texas at Austin 
+          studying Mathematics and Computer Science. Outside of school, I enjoy photography, 
+          playing pool, and golf. I'm also really interested in startups and like learning about 
+          the different sides of building a company, especially product, operations, data, and 
+          technology.
           </p>
 
           {/* A call to action for visitors to connect */}

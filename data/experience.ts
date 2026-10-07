@@ -8,6 +8,12 @@ export type Entry = {
 
 export const EXPERIENCE: Entry[] = [
   {
+    role: 'Software Engineer Intern',
+    company: 'Planview',
+    date: 'Summer 2026',
+    logo: '/images/planview-logo.png',
+  },
+  {
     role: 'Engineering & Operations Intern',
     company: 'Nook',
     date: 'Spring 2026',
@@ -18,12 +24,6 @@ export const EXPERIENCE: Entry[] = [
     company: 'OneGov',
     date: 'Fall 2025',
     logo: '/images/onegov-logo.png',
-  },
-  {
-    role: 'RSOC Student Analyst (Cybersecurity)',
-    company: 'UT Austin Information Security Office',
-    date: '2025 - 2026',
-    logo: '/images/utiso-logo.png',
   },
   {
     role: 'Software Engineer Intern',
@@ -44,7 +44,7 @@ export const EXPERIENCE: Entry[] = [
     logo: '/images/thebiglease-logo.png',
   },
   {
-    role: 'Research Intern',
+    role: 'Research Assistant',
     company: 'Computational Media Lab (UT Austin)',
     date: '2024 - 2025',
     logo: '/images/cml-logo.png',
@@ -56,7 +56,7 @@ export const EXPERIENCE: Entry[] = [
     logo: '/images/schoolsimplified-logo.png',
   },
   {
-    role: 'Research Intern',
+    role: 'Research Assistant',
     company: 'Real-Time Systems Lab (University of Houston)',
     date: 'Summer 2022',
     logo: '/images/uh-logo.png',
