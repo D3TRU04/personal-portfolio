@@ -3,23 +3,11 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Patriot-Bold';
-  src: url('/fonts/Patriot/Patriot-Medium.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'Commit Mono';
   src: url('/fonts/CommitMono/CommitMono-VariableFont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
-
-.patriot-bold {
-  font-family: 'Patriot-Bold', sans-serif;
 }
 
 .commit-mono {
@@ -119,11 +107,6 @@ img {
   @apply max-w-full h-auto;
 }
 
-/* Styles for task list items */
-.task-list-item {
-  @apply list-none;
-}
-
 ::selection {
   background-color: #fefefe;
   color: #393939;
@@ -131,164 +114,6 @@ img {
 
 html {
   min-width: 360px;
-}
-
-/* Styles for anchor tags within the .prose class */
-.prose .anchor {
-  @apply absolute invisible no-underline;
-  margin-left: -1em;
-  padding-right: 0.5em;
-  width: 80%;
-  max-width: 700px;
-  cursor: pointer;
-}
-
-.anchor:hover {
-  @apply visible;
-}
-
-/* Change mdx paragraph text size to small instead of base (16px) */
-.prose p {
-  @apply text-sm;
-}
-
-/* Styles for all anchor tags within the .prose class */
-.prose a {
-  @apply transition-all decoration-neutral-400 underline-offset-2 decoration-[0.1em];
-}
-
-.prose a:hover {
-  /* color: #d8b281; */
-}
-
-.prose .anchor:after {
-  @apply text-neutral-400;
-  content: '#';
-}
-
-.prose *:hover > .anchor {
-  @apply visible;
-}
-
-/* Styles for preformatted text within the .prose class */
-.prose pre {
-  @apply border border-neutral-700 bg-neutral-900;
-}
-
-/* Styles for inline code within the .prose class */
-.prose code {
-  @apply text-neutral-200 px-1 py-0.5 border border-neutral-700 rounded-lg bg-neutral-800;
-}
-
-/* Styles for inline code within preformatted text */
-.prose pre code {
-  @apply text-neutral-200 p-0;
-  border: initial;
-}
-
-/* Styles for images within the .prose class */
-.prose img {
-  @apply m-0;
-}
-
-/* Styles for the first child element of the .prose class */
-.prose > :first-child {
-  margin-top: 1.25em !important;
-  margin-bottom: 1.25em !important;
-}
-
-.prose ul li,
-.prose ol li {
-  @apply text-sm;
-}
-
-/* Styles for code with a certain language class and preformatted text with a certain language class */
-code[class*='language-'],
-pre[class*='language-'] {
-  @apply text-neutral-50;
-}
-
-pre,
-code {
-  @apply overflow-auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-pre::-webkit-scrollbar,
-code::-webkit-scrollbar {
-  display: none;
-}
-
-/* Styles for the scrollbar of preformatted text */
-pre::-webkit-scrollbar {
-  display: none;
-}
-
-pre {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-/* Removes the default Safari input shadow on mobile for text and email inputs */
-input[type='text'],
-input[type='email'] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-/* Styles for anchor tags within a .tweet class inside the .prose class */
-.prose .tweet a {
-  text-decoration: inherit;
-  font-weight: inherit;
-}
-
-/* Styles for tables */
-table {
-  display: block;
-  max-width: fit-content;
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
-/* Styles for paragraphs within a .callout class inside the .prose class */
-.prose .callout > p {
-  margin: 0 !important;
-}
-
-/* Styles for code fragments */
-[data-rehype-pretty-code-fragment] code {
-  @apply grid min-w-full break-words rounded-none border-0 bg-transparent p-0 text-sm text-white;
-  counter-reset: line;
-  box-decoration-break: clone;
-}
-[data-rehype-pretty-code-fragment] .line {
-  @apply py-1;
-}
-[data-rehype-pretty-code-fragment] [data-line-numbers] > .line::before {
-  counter-increment: line;
-  content: counter(line);
-  display: inline-block;
-  width: 1rem;
-  margin-right: 1rem;
-  text-align: right;
-  color: gray;
-}
-[data-rehype-pretty-code-fragment] .line--highlighted {
-  @apply bg-slate-500 bg-opacity-10;
-}
-[data-rehype-pretty-code-fragment] .line-highlighted span {
-  @apply relative;
-}
-[data-rehype-pretty-code-fragment] .word--highlighted {
-  @apply rounded-md bg-slate-500 bg-opacity-10 p-1;
-}
-[data-rehype-pretty-code-title] {
-  @apply px-4 py-3 font-mono text-xs font-medium border rounded-t-lg text-neutral-200 border-[#333333] bg-[#1c1c1c];
-}
-[data-rehype-pretty-code-title] + pre {
-  @apply mt-0 rounded-t-none border-t-0;
 }
 
 .link-with-animation {
@@ -313,8 +138,6 @@ table {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
-/* globals.css */
 
 @keyframes page_animation {
   0% {
